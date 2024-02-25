@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(42, 41, 41);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    top: 100px;
+    background-color: #fff;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.header {
+   margin-bottom: 20px;
+   text-align: center;
+   font-weight: bold;
+      
+}
+
+.questions {
+    border-top: 2px solid black;
+    padding: 10px;
+}
+
+.questions h3 {
+    margin: 10px 0px;
+    color: blue;
+    font-size: 16px;
+}
+
+.answers-div {
+    display: grid;
+    margin-top: 20px;
+    gap: 20px;
+
+}
+
+.answers-div button {
+    padding: 15px;
+    text-align: start;
+    border: 1px solid #222;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: #222;
+}
+
+.answers-div button:hover:not([disabled]) {
+    background-color: black;
+    color: #fff;
+}
+
+.answers-div button:disabled {
+    cursor: no-drop;
+}
+
+
+#next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 30px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(90deg , #7F27FF  ,#FF004D);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: none;
+    
+
+}
+#next-btn:hover {
+    background: linear-gradient(90deg , #FF004D, #7F27FF);
+}
+
+.correct {
+    background-color: rgb(97, 254, 97);
+}
+.incorrect {
+    background-color: rgb(255, 70, 70);
+}
